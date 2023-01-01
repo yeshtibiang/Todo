@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list app</title>
+
+    <link rel="stylesheet" href="./lib/themes/green.css" />
+    <link rel="stylesheet" href="./lib/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+    <!-- <link rel="stylesheet" href="./lib/jquery.mobile-1.4.5.min.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>ToDo List App</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form action="">
+                <label for="task">Ajouter une tâche</label>
+                <input type="text" id="task" placeholder="Nouvelle tâche">
+                <input class="ui-btn" type="button" value="Ajouter" onclick="ajouterTache()">
+                <input type="button" value="Réinitialiser"  onclick="renitialiser()">
+            </form>
+            <h4>Tâches en cours</h4>
+            <ul id="taskList" data-role="listview" data-inset="true">
+                
+            </ul>
+
+            <h4>Tâches Terminées</h4>
+            <ul id="tacheTermines" data-role="listview" data-inset="true">
+
+            </ul>
+            
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>By DIC3 Info &copy; 2022</h1>
+        </div>
+    </div>
+</body>
+</html>
